@@ -240,7 +240,7 @@ body {
         width: 100%;        
     }
     .main-article {
-       /* text-align: center;*/
+        text-align: center;
         width: 80%;
     }
     .main-article p {
