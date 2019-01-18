@@ -227,6 +227,9 @@ body {
     .logo {
         text-align: center;
     }
+	.nav {
+		-moz-font-family: 'Inconsolata', monospace;
+	}
     .header-grid-container {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
@@ -234,7 +237,7 @@ body {
         grid-column-gap: 50px;
         margin-top: 10px;
         float: none;
-     	text-align: center;
+        text-align: center;
     }
     .bg-image img {
         width: 100%;        
