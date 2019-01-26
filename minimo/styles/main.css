@@ -221,10 +221,18 @@ footer {
 
 	footer {
 		text-align: center;
+		height: 150px;
+	}
+	
+	.terms {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 15px;
 	}
 
 	.privacy {
-		margin-right: 0;
+		margin: 0 auto;
+		display: block;
 	}
 
 	footer .container .row {
