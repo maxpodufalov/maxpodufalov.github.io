@@ -211,6 +211,10 @@ footer {
 		margin: 25px auto 85px;
 	}
 
+	.subscribe h1 {
+		padding: 0 30px;
+	}
+
 	.subscribe input {
 		width: 80%;
 	}
@@ -219,12 +223,20 @@ footer {
 		text-align: center;
 	}
 
-	footer .row ul {
-		margin: 25px;
+	.privacy {
+		margin-right: 0;
+	}
+
+	footer .container .row {
+		margin: 0 auto;
+	}
+
+	footer .social {
+		margin-top: 25px;
 		padding: 0;
 	}
-	
-	footer .row {
-		display: block;
+
+	footer .social i {
+		margin: 0 25px;
 	}
 }
