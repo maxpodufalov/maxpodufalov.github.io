@@ -1,0 +1,300 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+ul,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+/*******************************************************/
+
+header {
+	background-image: url(../img/bg-1.jpg);
+	height: 800px;
+}
+
+nav {
+	margin-bottom: 270px;
+	padding-top: 65px;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.40);
+}
+
+.menu__item {
+	list-style: none;
+	margin-left: 50px;
+}
+
+.menu__item a {
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 8px;
+}
+
+.menu__item a:hover {
+	color: #4bcaff;
+	text-decoration: none;
+}
+
+.header_title {
+	text-align: center;
+}
+
+.header_title h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.header_title span {
+	background: rgba(0, 0, 0, 0.40);
+	padding: 0 15px;
+}
+
+.services {
+	background: #4bcaff;
+}
+
+.services__item {
+	padding-bottom: 70px;
+}
+
+.section_title {
+	font-size: 2.143rem;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	font-weight: 300;
+}
+
+.section_title:after {
+	content: '';
+	width: 45px;
+	height: 2px;
+	background: #fff;
+	display: block;
+	margin-top: 10px;
+	;
+}
+
+.services__item img {
+	padding-bottom: 24px;
+}
+
+.services__item h3 {
+	font-size: 1.712rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+}
+
+.services__item p {
+	font-size: 0.857rem;
+	color: #fff;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.portfolio {
+	padding-bottom: 65px;
+}
+
+.portfolio .section_title {
+	color: #515f67;
+}
+
+.portfolio .section_title:after {
+	background: #515f67;
+}
+
+.portfolio img {
+	padding-bottom: 30px;
+	height: auto;
+	width: 250px;
+}
+
+.default {
+	background: #515f67;
+	padding-bottom: 80px;
+}
+
+.default p {
+	color: #fff;
+}
+
+.default p:nth-last-child(2) {
+	padding-bottom: 80px;
+}
+
+.visme_btn {
+	padding: 10px 50px;
+	border: 2px solid #353f46;
+	border-radius: 3px;
+	color: #353f46;
+	text-transform: uppercase;
+}
+
+.visme_btn:hover {
+	text-decoration: none;
+	color: rgba(155, 155, 155, 0.99);
+	border: 2px solid rgba(155, 155, 155, 0.99);
+}
+
+.videoWrapper {
+	margin-top: -60px;
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.contact {
+	background: url(../img/bg-3.jpg);
+}
+
+.contact input,
+textarea {
+	background: none;
+	border: 2px solid rgba(255, 255, 255, 0.54);
+	border-radius: 2px;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+.contact label {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.contact input {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.contact input:last-child {
+	margin-bottom: 50px;
+}
+
+.contact p {
+	color: #fff;
+	margin-top: 20px;
+}
+
+.contact p:last-child {
+	margin-top: 0;
+}
+
+.contact input[type=submit] {
+	background: #4bcaff;
+	color: #fff;
+	border: none;
+	margin-top: 20px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+	background: #94d6f2;
+}
+
+footer {
+	height: 100px;
+	background: #353f47;
+}
+
+.footer_menu__item a {
+	line-height: 100px;
+	color: rgba(255, 255, 255, 0.47);
+	margin-right: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/****************************************/
+
+@media screen and (max-width: 900px) {
+	nav {
+		height: 440px;
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto 60px;
+	}
+
+	.menu {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.menu__item {
+		margin-left: 0;
+		margin-bottom: 20px;
+		font-size: 1.2rem;
+		text-align: center;
+
+	}
+
+	.header_title {
+		margin-top: -180px;
+	}
+
+	.header_title h1 {
+		font-size: 1.7rem;
+	}
+
+	.portfolio .row {
+		text-align: center;
+	}
+
+	.videoWrapper {
+		margin-top: 50px;
+	}
+
+	.contact textarea,
+	input {
+		width: 100%;
+	}
+
+	.contact p {
+		margin-top: 70px;
+	}
+	
+	.contact input[type=submit] {
+		margin: 50px auto 0 auto;
+		display: block;
+	}
+
+	footer {
+		height: 250px;
+	}
+	
+	.footer_menu {
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+	}
+	
+	.footer_menu__item a {
+		line-height: 50px;
+		margin: 0;
+	}
+}
