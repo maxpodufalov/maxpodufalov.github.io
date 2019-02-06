@@ -1,0 +1,336 @@
+@font-face {
+	font-family: 'Gotham Book';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/Gotham Book'), url('../fonts/GothamBook.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Gotham Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/Gotham Medium'), url('../fonts/GothamMedium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Gotham Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/Gotham Bold'), url('../fonts/GothamBold.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*============================================*/
+
+body {
+	font-family: 'Gotham Medium', sans-serif;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+ul,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.stn_title {
+	font-family: 'Gotham Medium', sans-serif;
+	font-size: 2.643rem;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 170px;
+	padding-bottom: 145px;
+	color: #fff;
+}
+
+.bl {
+	font-size: 17.86rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.28);
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+h3 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 20px 0;
+}
+
+/******************************/
+
+header {
+	background-image: url(../img/bg-1.jpg);
+	height: 880px;
+}
+
+.nav {
+	height: 115px;
+	border-bottom: 1px solid grey;
+}
+
+.menu {
+	margin-top: 45px;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+.menu__item {
+	margin-left: 42px;
+}
+
+.menu__item a {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 1.05rem;
+}
+
+.menu__item a:hover {
+	color: #11749e;
+	text-decoration: none;
+}
+
+.menu__item .active {
+	text-decoration: none;
+	padding-bottom: 42px;
+	border-bottom: 6px solid rgba(17, 116, 158, 0.96);
+}
+
+.site-title {
+	margin-top: 276px;
+	text-align: center;
+}
+
+.site-title h1 {
+	font-family: 'Gotham Bold', sans-serif;
+	color: #f5f5f5;
+	font-size: 10.93rem;
+	text-transform: uppercase;
+}
+
+.site-title p {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	color: rgb(17, 116, 158);
+	font-size: 1.786rem;
+	text-transform: uppercase;
+	letter-spacing: 25px;
+	padding-left: 30px;
+}
+
+.features {
+	position: relative;
+	height: 800px;
+	background: #11749e;
+	text-align: center;
+}
+
+.features i {
+	background-color: rgba(255, 255, 255, 0.18);
+	border: none;
+	border-radius: 50%;
+	padding: 50px;
+	font-size: 2.429rem;
+	color: #fff;
+}
+
+.features_text,
+.blog_text {
+	font-family: 'Gotham Book', sans-serif;
+	color: #fff;
+}
+
+.blog {
+	position: relative;
+	height: 900px;
+	background: #fff;
+	text-align: center;
+}
+
+.blog .stn_title {
+	color: #000;
+}
+
+.blog .bl {
+	color: rgba(0, 0, 0, 0.21);
+}
+
+.blog img {
+	width: 100%;
+	max-width: 250px;
+	max-height: 250px;
+	display: block;
+}
+
+.blog h3 {
+	color: #11749e;
+}
+
+.blog_text {
+	color: #222222;
+}
+
+.blog .row {
+	margin-bottom: 100px;
+}
+
+.contact {
+	height: 915px;
+	background-image: url(../img/bg-2.jpg);
+}
+
+.contact .stn_title {
+	padding-bottom: 150px;
+}
+
+.contact input {
+	width: 100%;
+	margin-bottom: 40px;
+	height: 48px;
+}
+
+.contact textarea {
+	width: 100%;
+	height: 150px;
+	margin-bottom: 40px;
+}
+
+.contact input, textarea {
+	background: none;
+	border: 1px solid white;
+	padding: 15px 20px;
+}
+
+.contact input::placeholder, textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.contact input::placeholder, textarea::placeholder:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+.contact input::placeholder, textarea::placeholder::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+.contact input, select, textarea{
+    color: white;
+}
+
+.contact textarea:focus, input:focus {
+    color: white;
+}
+
+.contact #btn_submit {
+	background: #11749e;
+	width: 100%;
+	height: 64px;
+	border: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin-bottom: 170px;
+}
+
+footer {
+	height: 135px;
+	background-color: #222222;
+}
+
+footer p {
+	color: white;
+	margin-top: 55px;
+}
+
+.f-sidebar_right {
+	text-align: right;
+}
+
+
+
+
+@media (max-width: 768px)  {
+	header .row {
+		text-align: center;
+	}
+
+	.menu {
+		flex-direction: column;
+		text-align: center;
+		margin: 50px auto;
+
+	}
+
+	.menu__item {
+		margin-bottom: 20px;
+		margin-left: 0;
+
+	}
+
+	.menu__item .active {
+		border: none;
+		color: #11749e;
+	}
+
+	.site-title {
+		margin-top: 500px;
+	}
+
+	.site-title h1 {
+		font-size: 4rem;
+	}
+
+	.site-title p {
+		font-size: 1rem;
+		letter-spacing: 10px;
+		padding-left: 0;
+	}
+
+	.features {
+		height: 1900px;
+	}
+
+	.features__item, .blog__item {
+		margin-bottom: 100px;
+	}
+
+	.blog {
+		height: 2350px;
+	}
+
+	.blog img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.contact {
+		padding-bottom: 100px;
+	}
+
+	.contact .stn_title {
+		margin-bottom: -100px; 
+	}
+
+	footer {
+		text-align: center;
+		height: 220px;
+	}
+
+	.f-sidebar_right {
+		text-align: center;
+	}
+}
+
