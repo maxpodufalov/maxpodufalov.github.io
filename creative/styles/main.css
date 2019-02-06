@@ -271,13 +271,11 @@ footer p {
 		flex-direction: column;
 		text-align: center;
 		margin: 50px auto;
-
 	}
 
 	.menu__item {
 		margin-bottom: 20px;
 		margin-left: 0;
-
 	}
 
 	.menu__item .active {
