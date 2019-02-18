@@ -1,0 +1,469 @@
+/*===========================
+          Variables
+===========================*/
+
+$primaryColor: #f5f5f5;
+$accent: #10c9c3;
+$montserrat: 'Montserrat',
+sans-serif;
+$black: #000;
+$white: #fff;
+
+/*===========================
+       Variables - END
+===========================*/
+
+/*===========================
+           Mixins
+===========================*/
+
+@mixin pText {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #787878;
+}
+
+@mixin bBtn {
+    text-transform: uppercase;
+    color: $white;
+    font-family: $montserrat;
+    font-size: 0.75rem;
+    background-color: $accent;
+    border-radius: 0;
+    padding: 15px 30px;
+    width: 180px;
+    cursor: pointer;
+    transition: 0.8s;
+
+    &:hover {
+        background-color: #1ed89f;
+    }
+}
+
+@mixin hElse {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: $black;
+}
+
+@mixin progressBar {
+    background: #d8d8d8;
+    position: absolute;
+}
+
+@mixin servIcon {
+    font-size: 3rem;
+    color: #656565;
+}
+
+@mixin mobilePadding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*===========================
+        Mixins - END
+===========================*/
+
+/*===========================
+        Specification
+===========================*/
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: $montserrat;
+}
+
+h3 {
+    @include hElse;
+}
+
+p {
+    @include pText;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*===========================
+     Specification - END
+===========================*/
+
+/*===========================
+          SCSS start
+===========================*/
+
+#navbar {
+    background: $primaryColor;
+    height: 100px;
+
+    .logo {
+        margin-top: 38px;
+        padding-left: 0 !important;
+    }
+}
+
+.menu {
+    margin-top: 45px;
+
+    .menu__item {
+        list-style: none;
+        margin-left: 30px;
+        line-height: 0.75rem;
+
+        a {
+            @include hElse;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.banner {
+    background: $primaryColor;
+    padding: 100px 0;
+
+    h1 {
+        font-family: $montserrat;
+        font-size: 2.375rem;
+    }
+
+    p {
+        font-size: 1.125rem;
+    }
+
+    .btn {
+        @include bBtn;
+    }
+}
+
+.about {
+    text-align: center;
+    padding: 100px 0;
+    background: $white;
+
+    p {
+        padding: 30px 0;
+    }
+}
+
+.skills {
+    background: #e9e9e9;
+
+    h3 {
+        padding: 40px 0 5px 0;
+    }
+
+    .left {
+        padding: 100px;
+        background: $primaryColor;
+    }
+
+    .right {
+        padding: 155px 7.2%;
+
+    }
+}
+
+.progress {
+    width: 100%;
+    max-width: 500px;
+    height: 3px;
+}
+
+.progress-wrap {
+    background: $accent;
+    position: relative;
+
+    .progress-bar-1 {
+        @include progressBar;
+        left: 75%;
+    }
+
+    .progress-bar-2 {
+        @include progressBar;
+        left: 90%;
+    }
+
+    .progress-bar-3 {
+        @include progressBar;
+        left: 65%;
+    }
+}
+
+.numbers {
+    background: $accent;
+    padding: 100px 0;
+    display: flex;
+    align-content: space-around;
+
+    i {
+        font-size: 3.4rem;
+        color: $white;
+        float: left;
+    }
+
+    .numbers__item p {
+        color: $white;
+        display: inline;
+        margin-left: 30px;
+    }
+
+    .numbers__item_quantity {
+        font-family: $montserrat;
+        font-size: 1.125rem;
+    }
+
+    .numbers__item_description {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+    }
+}
+
+.gallery-block {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .item {
+        margin-bottom: 0;
+        background: $black;
+        opacity: 1;
+        overflow: hidden;
+
+        .image {
+            transition: 0.3s ease;
+        }
+    }
+
+    .zoom-on-hover:hover .image {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+
+    .load-more {
+        height: 100px;
+        background: $primaryColor;
+        text-align: center;
+
+        a {
+            text-transform: uppercase;
+            color: #8e8e8e;
+            font-family: $montserrat;
+            font-size: 0.75rem;
+            line-height: 100px;
+            text-decoration: none;
+        }
+    }
+}
+
+.process {
+    text-align: center;
+    padding: 80px 0 100px 0;
+
+    h2 {
+        margin-bottom: 45px;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+
+    .videoWrapper {
+        display: block;
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.services {
+    background: $primaryColor;
+    text-align: center;
+    padding-top: 100px;
+
+    .services__item {
+        margin-bottom: 60px;
+    }
+
+    .row {
+        padding-bottom: 40px;
+    }
+
+    h3 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    i {
+        @include servIcon;
+    }
+}
+
+.cite {
+    text-align: center;
+    background: $accent;
+    padding: 100px 0;
+    transition: 0.8s;
+
+    .cite_text {
+        font-family: $montserrat;
+        font-size: 1.875rem;
+        color: $white;
+        padding-bottom: 20px;
+    }
+
+    .cite_author {
+        font-family: $montserrat;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &:hover {
+        background-color: #1ed89f;
+    }
+}
+
+.partners {
+    padding: 100px 0;
+
+    .partners__item {
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+
+        }
+    }
+}
+
+.contact {
+    padding: 100px 0;
+    background: $primaryColor;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 45px;
+    }
+
+    p {
+        max-width: 550px;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 30px;
+    }
+
+    input#name,
+    input#email,
+    input#title,
+    textarea {
+        padding: 12px 18px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        @include bBtn;
+    }
+}
+
+footer {
+    padding: 100px 0;
+    background: #141414;
+
+    h2 {
+        color: $white;
+        font-size: 1.125rem;
+    }
+
+    p,
+    a {
+        font-size: 0.95rem;
+        color: $white;
+    }
+}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        text-align: center;
+
+        .logo {
+            padding-left: 30px !important;
+            margin: 50px auto 0 auto;
+        }
+    }
+
+    .menu {
+        flex-direction: column;
+
+        .menu__item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .banner {
+        padding: 300px 20px 100px 20px;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .about {
+        @include mobilePadding;
+    }
+
+    .numbers {
+        .numbers__item {
+            padding: 20px;
+        }
+    }
+
+    .gallery-block {
+        text-align: center;
+    }
+
+    .partners__item {
+        padding: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
