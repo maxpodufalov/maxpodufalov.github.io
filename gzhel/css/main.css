@@ -120,27 +120,23 @@ p {
         border-top: 2px solid lightgrey; }
 
 .christmas {
-  display: none;
   background: url("../../img/christmas-banner.jpg") no-repeat center top;
   width: 100%;
   max-width: 1600px;
-  height: 100vh;
-  min-height: 620px; }
+  height: 620px; }
   .christmas .christmas-banner {
     padding-top: 240px;
     text-align: center; }
     .christmas .christmas-banner h1 {
       line-height: 0; }
 
-.banners-bot {
-  display: none; }
-  .banners-bot .container .item {
-    height: auto;
-    max-width: 300px; }
-    .banners-bot .container .item:first-child {
-      text-align: left; }
-    .banners-bot .container .item:last-child {
-      margin-top: 0;
-      text-align: center; }
+.banners-bot .container .item {
+  height: auto;
+  max-width: 300px; }
+  .banners-bot .container .item:first-child {
+    text-align: left; }
+  .banners-bot .container .item:last-child {
+    margin-top: 0;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
