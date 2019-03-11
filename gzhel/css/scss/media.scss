@@ -1,0 +1,54 @@
+@media screen and (max-width: 900px) {
+    h3 {
+        font-size: 24px;
+    }
+    .banner,
+    .christmas-banner {
+        margin-top: 75px;
+        width: 100%;
+        h2 {
+            font-size: 30px;
+        }
+        h1 {
+            font-size: 80px;
+        }
+    }
+    .banners-top {
+        .container {
+            margin: 75px auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            .item {
+                order: 2;
+                margin-bottom: 50px;
+                &:last-child {
+                    order: 1;
+                }
+            }
+        }
+    }
+    .fantasy {
+        margin: 0 50px;
+        h3 {
+            line-height: normal;
+            span {
+                font-size: 46px;
+            }
+        }
+        .container {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    }
+    .banners-bot {
+        .container {
+            flex-wrap: wrap;
+            justify-content: center;
+            .item {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+}
