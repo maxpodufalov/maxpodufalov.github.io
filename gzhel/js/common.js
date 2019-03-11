@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-	$('.parallax-window').parallax({imageSrc: ('https://maxpodufalov.github.io/gzhel/img/banner.jpg')});
+	$('.parallax-window').parallax({imageSrc: 'https://maxpodufalov.github.io/gzhel/img/banner.jpg'});
 
 	$(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
