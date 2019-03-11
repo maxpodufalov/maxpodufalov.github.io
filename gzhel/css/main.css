@@ -30,7 +30,8 @@ p {
   height: 50px;
   background-color: #3F51B5;
   display: none;
-  border-radius: 60px; }
+  border-radius: 60px;
+  z-index: 200; }
   #scroll span {
     position: absolute;
     top: 50%;
