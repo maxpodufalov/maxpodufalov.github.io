@@ -48,7 +48,6 @@ p {
     -ms-filter: "alpha(opacity=80)"; }
 
 .parallax-window {
-  background-image: url("https://maxpodufalov.github.io/gzhel/img/banner.jpg");
   width: 100%;
   height: 100vh;
   min-height: 620px; }
