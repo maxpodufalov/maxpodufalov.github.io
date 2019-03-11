@@ -158,12 +158,10 @@ p {
 }
 
 .christmas {
-    //background: url('../../img/christmas-banner.jpg') no-repeat center top;
-    background-color: black;
+    background: url('/../../img/christmas-banner.jpg') no-repeat center top;
     width: 100%;
-    max-width: 1600px;
-    height: 620px;
-  //  min-height: 620px;
+    height: 100vh;
+    min-height: 620px;
 
     .christmas-banner {
         padding-top: 240px;

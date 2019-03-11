@@ -120,10 +120,10 @@ p {
         border-top: 2px solid lightgrey; }
 
 .christmas {
-  background-color: black;
+  background: url("/../../img/christmas-banner.jpg") no-repeat center top;
   width: 100%;
-  max-width: 1600px;
-  height: 620px; }
+  height: 100vh;
+  min-height: 620px; }
   .christmas .christmas-banner {
     padding-top: 240px;
     text-align: center; }
