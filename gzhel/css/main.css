@@ -132,13 +132,15 @@ p {
     .christmas .christmas-banner h1 {
       line-height: 0; }
 
-.banners-bot .container .item {
-  height: auto;
-  max-width: 300px; }
-  .banners-bot .container .item:first-child {
-    text-align: left; }
-  .banners-bot .container .item:last-child {
-    margin-top: 0;
-    text-align: center; }
+.banners-bot {
+  display: none; }
+  .banners-bot .container .item {
+    height: auto;
+    max-width: 300px; }
+    .banners-bot .container .item:first-child {
+      text-align: left; }
+    .banners-bot .container .item:last-child {
+      margin-top: 0;
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
