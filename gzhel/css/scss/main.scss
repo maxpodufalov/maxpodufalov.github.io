@@ -65,6 +65,11 @@ p {
 }
 
 .parallax-window {
+    background-image: url("https://maxpodufalov.github.io/gzhel/img/banner.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     min-height: 620px;
@@ -101,7 +106,7 @@ p {
                 p {
                     margin-top: 60px;
                 }
-                
+
                 h3 {
                     color: $main;
                 }
@@ -182,17 +187,20 @@ p {
 }
 
 .banners-bot {
-    .container {        
+    .container {
         .item {
             height: auto;
             max-width: 300px;
+
             &:first-child {
                 text-align: left;
             }
+
             &:last-child {
                 margin-top: 0;
                 text-align: center;
             }
+
             h3 {
                 color: $main;
             }
