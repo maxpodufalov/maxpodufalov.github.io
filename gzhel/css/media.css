@@ -15,20 +15,13 @@
 
   .banners-top .container {
     margin: 75px auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: center;
+    flex-wrap: wrap; }
     .banners-top .container .item {
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
+      order: 2;
       margin-bottom: 50px; }
       .banners-top .container .item:last-child {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
+        order: 1; }
 
   .fantasy {
     margin: 0 50px; }
@@ -37,19 +30,13 @@
       .fantasy h3 span {
         font-size: 46px; }
     .fantasy .container {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      flex-wrap: wrap;
+      justify-content: center;
       margin: 0 auto; }
 
   .banners-bot .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .banners-bot .container .item {
       margin-bottom: 50px; } }
 
