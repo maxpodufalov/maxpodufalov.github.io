@@ -31,7 +31,7 @@ p {
   background-color: #3F51B5;
   display: none;
   border-radius: 60px;
-  z-index: 200; }
+  z-index: 10; }
   #scroll span {
     position: absolute;
     top: 50%;
@@ -41,7 +41,8 @@ p {
     height: 0;
     width: 0;
     border: 8px solid transparent;
-    border-bottom-color: #ffffff; }
+    border-bottom-color: #ffffff;
+    z-index: 12; }
   #scroll:hover {
     background-color: rgba(63, 81, 181, 0.81);
     opacity: 1;

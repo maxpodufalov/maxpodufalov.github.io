@@ -43,7 +43,7 @@ p {
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     border-radius: 60px;
-    z-index: 200;
+    z-index: 10;
 
     span {
         position: absolute;
@@ -55,6 +55,7 @@ p {
         width: 0;
         border: 8px solid transparent;
         border-bottom-color: #ffffff;
+        z-index: 12;
     }
 
     &:hover {
