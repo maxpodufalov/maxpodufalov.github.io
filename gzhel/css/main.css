@@ -82,6 +82,9 @@ p {
       .banners-top .container .item:last-child p,
       .banners-bot .container .item:last-child p {
         margin-top: 60px; }
+      .banners-top .container .item:last-child h3,
+      .banners-bot .container .item:last-child h3 {
+        color: #3F51B5; }
     .banners-top .container .item button,
     .banners-bot .container .item button {
       margin-top: 50px;
