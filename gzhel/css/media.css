@@ -36,7 +36,8 @@
 
   .banners-bot .container {
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin: 50px; }
     .banners-bot .container .item {
       margin-bottom: 50px; } }
 

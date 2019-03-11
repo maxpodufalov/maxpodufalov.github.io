@@ -117,6 +117,8 @@ p {
 
     h3 {
         line-height: 2;
+        margin: 50px 0 0;
+        color: $main;
 
         span {
             color: $main;
@@ -186,6 +188,9 @@ p {
             &:last-child {
                 margin-top: 0;
                 text-align: center;
+            }
+            h3 {
+                color: $main;
             }
         }
     }

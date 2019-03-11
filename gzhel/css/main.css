@@ -91,7 +91,9 @@ p {
   margin: 0 100px;
   text-align: center; }
   .fantasy h3 {
-    line-height: 2; }
+    line-height: 2;
+    margin: 50px 0 0;
+    color: #3F51B5; }
     .fantasy h3 span {
       color: #3F51B5;
       font-size: 48px; }
@@ -138,5 +140,7 @@ p {
   .banners-bot .container .item:last-child {
     margin-top: 0;
     text-align: center; }
+  .banners-bot .container .item h3 {
+    color: #3F51B5; }
 
 /*# sourceMappingURL=main.css.map */
