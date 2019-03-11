@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-	$('.parallax-window').parallax({imageSrc: 'img/banner.jpg'});
+	$('.parallax-window').parallax({imageSrc: '../img/banner.jpg'});
 
 	$(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
