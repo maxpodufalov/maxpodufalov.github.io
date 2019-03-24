@@ -2,13 +2,35 @@
   margin: 0;
   padding: 0; }
 
+html {
+  min-height: 100%;
+  position: relative; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  background: url("../../img/bg.png") no-repeat;
-  background-color: #eee;
+  background-image: url("../../img/bg.png");
+  background-repeat: repeat-x;
+  background-color: #ededed;
   background-size: auto;
-  height: auto; }
+  height: auto;
+  z-index: 1; }
+
+.bottom-background {
+  background-image: url("../../img/bg.png");
+  background-repeat: repeat-x;
+  background-size: auto;
+  transform: scaleX(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  -webkit-filter: FlipV;
+          filter: FlipV;
+  -ms-filter: "FlipV";
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1; }
 
 /*================================================================ HEADER START =================*/
 .header .lang-change-container {
@@ -214,7 +236,8 @@ body {
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           .form .container .inner-container .inputs .items-regular input {
-            width: 130px; }
+            max-width: 130px;
+            width: 100%; }
           .form .container .inner-container .inputs .items-regular .btn-submit {
             background-color: #006c86;
             border-radius: 4px;
@@ -344,35 +367,39 @@ body {
 
 /*================================================================ SMALL-CARDS END =================*/
 /*================================================================ ORDER-CARDS START =================*/
-.order-cards .container {
-  max-width: 940px;
-  padding: 0 20px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px 20px 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-radius: 4px;
-  height: auto;
-  background-color: #727272; }
-  .order-cards .container div {
-    max-width: 280px;
-    width: 100%;
-    background-color: #ccc;
-    padding: 15px;
+.order-cards {
+  margin-bottom: 170px; }
+  .order-cards .container {
+    max-width: 940px;
+    padding: 0 20px;
+    margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 15px; }
-  .order-cards .container .item-1,
-  .order-cards .container .item-2,
-  .order-cards .container .item-3 {
-    background-color: #fff; }
+    padding: 37px 20px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 4px;
+    height: auto;
+    background-color: #727272; }
+    .order-cards .container div {
+      max-width: 280px;
+      width: 100%;
+      background-color: #ccc;
+      padding: 8px 15px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-bottom: 15px; }
+    .order-cards .container .item-1,
+    .order-cards .container .item-2,
+    .order-cards .container .item-3 {
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-spacing: 10px; }
 
 /*# sourceMappingURL=main.css.map */
