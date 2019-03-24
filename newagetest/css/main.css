@@ -368,7 +368,7 @@ body {
 /*================================================================ SMALL-CARDS END =================*/
 /*================================================================ ORDER-CARDS START =================*/
 .order-cards {
-  margin-bottom: 170px; }
+  margin-bottom: 100px; }
   .order-cards .container {
     max-width: 940px;
     padding: 0 20px;
