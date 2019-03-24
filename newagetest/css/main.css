@@ -9,7 +9,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  background-image: url("../../img/bg.png");
+  background-image: url("../img/bg.png");
   background-repeat: repeat-x;
   background-color: #ededed;
   background-size: auto;
@@ -17,7 +17,7 @@ body {
   z-index: 1; }
 
 .bottom-background {
-  background-image: url("../../img/bg.png");
+  background-image: url("../img/bg.png");
   background-repeat: repeat-x;
   background-size: auto;
   transform: scaleX(-1);
@@ -117,7 +117,7 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      list-style-image: url("../../img/links_icon.png");
+      list-style-image: url("../img/links_icon.png");
       text-transform: uppercase; }
       .header .container .header-links .links-list ul {
         margin: 20px 0;
