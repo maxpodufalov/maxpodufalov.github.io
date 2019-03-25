@@ -5,7 +5,7 @@ $(function () {
     $("#loadMore").on("click", function (e) {
         e.preventDefault();
         $(".item:hidden")
-            .slice(0, 8)
+            .slice(4, 11)
             .slideDown();
 
         if ($("item:hidden").length == 0) {
