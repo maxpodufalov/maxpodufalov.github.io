@@ -6,3 +6,5 @@
 4. Creatives - Bootstrap 4 - responsive
 5. Piroll - Bootstrap 4 + Sass (Scss) - responsive
 6. Gzhel - Flexbox + Sass (Scss) - responsive
+7. NewAgeTest - Flexbox + Sass (Scss) - responsive
+8. Printe - Flexbox + Sass (Scss) - responsive
