@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/resir014/Clear-Sans-Webfont/v1.1.0/css/clear-sans.css">
+    <!--  Clear Sans 
+    -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum"> <!-- Cuprum -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Printe - Ваша типография</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="printe logo"></a></div>
+            <div class="info">
+                <p>Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
+                <p>Работаем с 9 до 18, вс и сб выходные</p>
+            </div>
+            <div class="user-panel">
+                <img src="img/user.svg" alt="user panel"><a href="#!">Личный кабинет</a>
+            </div>
+            <div class="contacts">
+                <div class="site-link">
+                    <a href="#!">maket@test-vertka.ua</a>
+                </div>
+                <div class="social">
+                    <a href="#!"><img src="img/facebook.svg" alt="facebook"></a>
+                    <img src="img/phone.svg" alt="phone">
+                    <p>(044) 345-40-42</p>
+                    <button onclick="topPopup()"><img src="img/chevron.svg"></button>
+                    <div id="panel-top">
+                        <ul>
+                            <li><img src="img/vodafon.png" alt="vodafon">
+                                <p>(099) 445-54-18</p>
+                            </li>
+                            <li><img src="img/kyivstar.png" alt="kyivstar" width="25px" height="25px">
+                                <p>(096) 497-78-03</p>
+                            </li>
+                            <li><img src="img/lifecell.png" alt="lifecell">
+                                <p>(063) 435-16-81</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div><!-- //social -->
+
+            </div><!-- //contacts -->
+            <div class="shopping-cart">
+                <a href="#!"><img src="img/shopping-cart.svg" alt="shopping cart"></a>
+                <span id="shopping-cart-amount">3</span>
+            </div>
+        </div>
+    </header>
+    <nav class="topnav">
+        <div class="container">
+            <ul class="topnav-menu">
+                <li><a href="#!">Главная</a></li>
+                <li><a href="#!">Продукция</a></li>
+                <li><a href="#!">Доставка и оплата</a></li>
+                <li><a href="#!">Новости</a></li>
+                <li><a href="#!">База знаний</a></li>
+                <li><a href="#!">О нас</a></li>
+                <li><a href="#!">Контакты</a></li>
+                <li><a href="#!"><img src="img/search.svg" alt="search"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Оперативная печать полиграфии от 1 дня!</h1>
+            <h2>Доставка в любой город Украины</h2>
+            <a href="#!" class="btn-order">Сделать заказ</a>
+        </div>
+        <div id="callback">
+            <a href="#!"><img src="img/phone-white.svg" alt="phone">
+                <p>Перезвоните
+                    мне сейчас!</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="stn-title">Продукция</h2>
+        <div class="container">
+            <div class="item">
+                <div class="item-image">
+                    <img src="img/blank-page.svg" alt="pages">
+                </div>
+                <div class="item-text">
+                    <h3>Офисная продукция</h3>
+                    <ul>
+                        <li>Визитки</li>
+                        <li>Конверты</li>
+                        <li>Папки</li>
+                        <li>Книги</li>
+                        <li>Блокноты</li>
+                        <li>Фирменные бланки</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="img/road-map.svg" alt="pages">
+                </div>
+                <div class="item-text">
+                    <h3>Рекламная продукция</h3>
+                    <ul>
+                        <li>Листовки</li>
+                        <li>Флаера</li>
+                        <li>Буклеты</li>
+                        <li>Календари</li>
+                        <li>Блокноты</li>
+                        <li>Плакаты</li>
+                        <li>Баннеры</li>
+                        <li>Магниты</li>
+                        <li>Наклейки</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="img/book.svg" alt="pages">
+                </div>
+                <div class="item-text">
+                    <h3>Для бизнеса</h3>
+                    <ul>
+                        <li>Каталоги</li>
+                        <li>Журналы</li>
+                        <li>Дисконтные карты</li>
+                        <li>Бейджи</li>
+                        <li>Гарантийные наклейки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <h2 class="stn-title">О нас</h2>
+            <p>Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м.
+                Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.</p>
+        </div>
+    </section>
+    <section class="news">
+        <h2 class="stn-title">Новости</h2>
+        <div class="container">
+            <div class="item">
+                <a href="#!">
+                    <p class="date">14 марта 2018</p>
+                    <p class="text">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#!">
+                    <p class="date">14 марта 2018</p>
+                    <p class="text">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#!">
+                    <p class="date">14 марта 2018</p>
+                    <p class="text">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+                </a>
+            </div>
+        </div>
+        <a href="#!" class="btn-more">Смотреть все новости</a>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="printe logo"></a>
+                <div class="copyright">
+                    <p>2018 &ndash; Все права защищены</p>
+                </div>
+            </div>
+            <div class="info">
+                <p>Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
+                <p>Работаем с 9 до 18, вс и сб выходные</p>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#!">Главная</a></li>
+                    <li><a href="#!">Продукция</a></li>
+                    <li><a href="#!">Доставка и оплата</a></li>
+                    <li><a href="#!">Новости</a></li>
+                    <li><a href="#!">База знаний</a></li>
+                    <li><a href="#!">О нас</a></li>
+                    <li>
+                        <div class="footer-social">
+                            <a href="#!"><img src="img/facebook.svg" alt="facebook">
+                            </a>
+                            <img src="img/phone.svg" alt="phone">
+                            <p>(044) 345-40-42</p>
+                            <button onclick="botPopup()"><img src="img/chevron.svg"></button>
+                            <div id="panel-bottom">
+                                <ul>
+                                    <li><img src="img/vodafon.png" alt="vodafon">
+                                        <p>(099) 445-54-18</p>
+                                    </li>
+                                    <li><img src="img/kyivstar.png" alt="kyivstar" width="25px" height="25px">
+                                        <p>(096) 497-78-03</p>
+                                    </li>
+                                    <li><img src="img/lifecell.png" alt="lifecell">
+                                        <p>(063) 435-16-81</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#!">Контакты</a></li>
+                    <li><a href="#!" class="glyanec-link"><img src="img/glyanec.svg" alt="glyanec">Глянец &ndash; Разработка сайтов</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+
+</html>
